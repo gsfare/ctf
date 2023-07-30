@@ -12,7 +12,7 @@ def encode(flag):
 
 def decode(flag):
   flag_copy = list(flag)
-  for i in range(8,17):
+  for i in range(8,23):
     if i & 1 == 0:
       flag_copy[i] = chr(ord(flag[i]) - 5)
     else:
